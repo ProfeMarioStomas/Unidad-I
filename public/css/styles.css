@@ -1,0 +1,22 @@
+h1.titulo_en_rojo {
+    color: red;
+}
+
+.fondoNegro_letrasBlancas {
+    background-color: black;
+    color: white;
+}
+
+#div_negro {
+    background-color: black;
+    padding: 30px;
+}
+
+table.tabla {
+    background-color: rgb(88, 211, 219);
+    border: 10px red;
+}
+
+form#formulario {
+    margin: 30px;
+}

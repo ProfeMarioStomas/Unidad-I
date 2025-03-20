@@ -5,63 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
+    <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 
 <body>
-    asd
-    
     <h1>Hola</h1>
     <h2>segundo</h2>
-    hola curso
+    <div class="fondoNegro_letrasBlancas">hola curso</div>
     <h1>chao</h1>
-    <h1>En rojo</h1>
-    <h1>Fondo negro letras blancas</h1>
+    <h1 class="titulo_en_rojo">En rojo</h1>
+    <h1 class="fondoNegro_letrasBlancas">Fondo negro letras blancas</h1>
+yo soy texto al aire
+    <div id="div_negro">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>
+                        Rut Alumno
+                    </th>
+                    <th>
+                        Nombres
+                    </th>
+                    <th>
+                        A. Paterno
+                    </th>
+                    <th>
+                        A. Materno
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12.345.678-9</td>
+                    <td>Mario Andrés</td>
+                    <td>Cares</td>
+                    <td>Cabezas</td>
+                </tr>
+                <tr>
+                    <td>9.876.543-2</td>
+                    <td>Pedro Pablo</td>
+                    <td>Pérez</td>
+                    <td>Pereira</td>
+                </tr>
+                <tr>
+                    <td>1-9</td>
+                    <td>Juan Antonio</td>
+                    <td>Visual</td>
+                    <td>Code</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
 
-    <table border="10">
-        <thead>
-            <tr>
-                <th>
-                    Rut Alumno
-                </th>
-                <th>
-                    Nombres
-                </th>
-                <th>
-                    A. Paterno
-                </th>
-                <th>
-                    A. Materno
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>12.345.678-9</td>
-                <td>Mario Andrés</td>
-                <td>Cares</td>
-                <td>Cabezas</td>
-            </tr>
-            <tr>
-                <td>9.876.543-2</td>
-                <td>Pedro Pablo</td>
-                <td>Pérez</td>
-                <td>Pereira</td>
-            </tr>
-            <tr>
-                <td>1-9</td>
-                <td>Juan Antonio</td>
-                <td>Visual</td>
-                <td>Code</td>
-            </tr>
-        </tbody>
-        <tfoot></tfoot>
-    </table>
+        <table class="">
+            <thead>
+                <tr>
+                    <th>
+                        Rut Alumno
+                    </th>
+                    <th>
+                        Nombres
+                    </th>
+                    <th>
+                        A. Paterno
+                    </th>
+                    <th>
+                        A. Materno
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12.345.678-9</td>
+                    <td>Mario Andrés</td>
+                    <td>Cares</td>
+                    <td>Cabezas</td>
+                </tr>
+                <tr>
+                    <td>9.876.543-2</td>
+                    <td>Pedro Pablo</td>
+                    <td>Pérez</td>
+                    <td>Pereira</td>
+                </tr>
+                <tr>
+                    <td>1-9</td>
+                    <td>Juan Antonio</td>
+                    <td>Visual</td>
+                    <td>Code</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
 
-    <br />
-    <br />
-    <br />
-
-    <form>
+    <form id="formulario" action="/recepcion/de/datos.php" method="get">
         <label>
             Nombre Alumno
             <input type="text" name="txtNombre" />
@@ -103,11 +140,11 @@
         </label>
         <label>
             Electrónica
-            <input type="radio" name="rbCarrera" value="elc"  />
+            <input type="radio" name="rbCarrera" value="elc" />
         </label>
         <label>
             Redes
-            <input type="radio" name="rbCarrera"  value="rds" />
+            <input type="radio" name="rbCarrera" value="rds" />
         </label>
         <br />
         <label>
@@ -115,8 +152,10 @@
             <input type="file" name="flAvatar" />
         </label>
         <br />
-        <button name="btnEnviar">Enviar datos</button>
+        <button name="btnEnviar" type="submit">Enviar datos</button>
     </form>
+    <br />
+    <hr />
 </body>
 
 </html>
