@@ -15,7 +15,63 @@
     <h1>chao</h1>
     <h1 class="titulo_en_rojo">En rojo</h1>
     <h1 class="fondoNegro_letrasBlancas">Fondo negro letras blancas</h1>
-yo soy texto al aire
+    <form id="formulario" action="/recepcion/de/datos.php" method="get">
+        <label>
+            Nombre Alumno
+            <input type="text" name="txtNombre" required minlength="2" maxlength="10" />
+        </label>
+        <br />
+        <label>
+            Edad Alumno
+            <input type="number" name="txtEdad" required min="1" max="120" step=".25" />
+        </label>
+        <br />
+        <label>
+            Fecha Nacimiento Alumno
+            <input type="date" name="txtFechaNacimiento" required min="2025-01-01" max="2025-12-31" />
+        </label>
+        <br />
+        <label>
+            ¿Vegano?
+            <input type="checkbox" name="chbVegano" />
+        </label>
+        <br />
+        <label>
+            Género
+            <select name="slGenero" required >
+                <option value="">Seleccione</option>
+                <option value="M">
+                    Mujer
+                </option>
+                <option value="H">
+                    Hombre
+                </option>
+                <option value="P">
+                    Perro
+                </option>
+            </select>
+        </label>
+        <br />
+        <label>
+            Informática
+            <input type="radio" name="rbCarrera" value="inf" required />
+        </label>
+        <label>
+            Electrónica
+            <input type="radio" name="rbCarrera" value="elc"  />
+        </label>
+        <label>
+            Redes
+            <input type="radio" name="rbCarrera" value="rds"  />
+        </label>
+        <br />
+        <label>
+            Avatar
+            <input type="file" name="flAvatar" />
+        </label>
+        <br />
+        <button name="btnEnviar" type="submit">Enviar datos</button>
+    </form>
     <div id="div_negro">
         <table class="tabla">
             <thead>
@@ -98,62 +154,7 @@ yo soy texto al aire
         </table>
     </div>
 
-    <form id="formulario" action="/recepcion/de/datos.php" method="get">
-        <label>
-            Nombre Alumno
-            <input type="text" name="txtNombre" />
-        </label>
-        <br />
-        <label>
-            Edad Alumno
-            <input type="number" name="txtEdad" />
-        </label>
-        <br />
-        <label>
-            Fecha Nacimiento Alumno
-            <input type="date" name="txtFechaNacimiento" />
-        </label>
-        <br />
-        <label>
-            ¿Vegano?
-            <input type="checkbox" name="chbVegano" />
-        </label>
-        <br />
-        <label>
-            Género
-            <select name="slGenero">
-                <option>
-                    Mujer
-                </option>
-                <option>
-                    Hombre
-                </option>
-                <option>
-                    Perro
-                </option>
-            </select>
-        </label>
-        <br />
-        <label>
-            Informática
-            <input type="radio" name="rbCarrera" value="inf" />
-        </label>
-        <label>
-            Electrónica
-            <input type="radio" name="rbCarrera" value="elc" />
-        </label>
-        <label>
-            Redes
-            <input type="radio" name="rbCarrera" value="rds" />
-        </label>
-        <br />
-        <label>
-            Avatar
-            <input type="file" name="flAvatar" />
-        </label>
-        <br />
-        <button name="btnEnviar" type="submit">Enviar datos</button>
-    </form>
+    
     <br />
     <hr />
 </body>
